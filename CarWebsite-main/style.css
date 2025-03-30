@@ -1,0 +1,90 @@
+/* Remove scrollbars and ensure full viewport coverage */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-image: url(maserati-mc20-sports-cars-rear-view-2021-5k-3840x2160-2720.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.taas {
+    display: flex;
+    flex-direction: row;
+    height: 100px ;
+    padding: 20px;
+    position: relative;
+    justify-content: space-evenly;
+    
+}
+
+
+input {
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: transparent;
+    padding-left: 20px;
+    
+}
+input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+span {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 254, 254);
+    position: relative;
+    cursor: pointer;
+}
+input::before {
+    background-color: wheat;
+}
+
+span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.5s ease;
+}
+
+span:hover::after {
+    width: 100%;
+}
+.sidebar {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+img {
+    position: fixed;
+    width: 250px;
+    top: -30px;
+    left: 10px;
+}
+.statement {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 600px;
+    top: 200px;
+    left: 50px;
+    font-size: 30px;
+}
+
+
